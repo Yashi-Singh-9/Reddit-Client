@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Button to Add New Subreddit -->
+        <button id="addSubredditBtn" class="add-btn">+</button>
+        
+        <!-- Modal for Adding Subreddit -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <h3>Enter the name of subreddit</h3>
+            <input type="text" id="subredditInput" placeholder="e.g., javascript">
+            <button id="addSubredditConfirm">Add Subreddit</button>
+          </div>
+        </div>
+        
+        <!-- Lane Container -->
+        <div id="lanes" class="lanes"></div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
