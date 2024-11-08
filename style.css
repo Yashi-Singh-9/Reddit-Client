@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 1000px;
+    width: 90%;
+  }
+  
+  .add-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .lanes {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .lane {
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-top: 50px;
+  }
+  
+  .lane-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lane-header h3 {
+    margin: 0;
+  }
+  
+  .post {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .post:last-child {
+    border-bottom: none;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .modal input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .modal button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal.show {
+    visibility: visible;
+  }
+  
